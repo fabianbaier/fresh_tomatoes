@@ -1,3 +1,4 @@
+# Creating the Movie Class and the parameters
 class Movie():
     def __init__(self, movie_title, movie_storyline, movie_more, poster_image, trailer_youtube):
         self.title = movie_title
@@ -7,4 +8,5 @@ class Movie():
         self.trailer_youtube_url = trailer_youtube
 
     def show_trailer(self):
+    # Passing the url to the webbrowser
         webbrowser.open(self.trailer_youtube_url)

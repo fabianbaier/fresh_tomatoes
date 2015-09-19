@@ -1,6 +1,10 @@
+# Importing my other classes and functions
+# fresh_tomatoes.py is used for creating the fresh_tomatoes.html
 import fresh_tomatoes
+# media.py is used for defining the class Movie() and interpreting the passed list as well as adding trailer display functionality
 import media
 
+# Defining  my list
 man_on_fire = media.Movie("Man on Fire", "In a Mexico City wracked by a recent wave of kidnappings, ex-CIA operative John Creasy (Denzel Washington) reluctantly accepts a job as a bodyguard for 9-year-old Lupita (Dakota Fanning), the daughter of wealth…","http://www.imdb.com/title/tt0328107/","https://upload.wikimedia.org/wikipedia/en/e/e8/Man_on_fireposter.jpg","https://www.youtube.com/watch?v=g4kLizDXLY0")
 
 inside_out = media.Movie("Inside Out", "Riley (Kaitlyn Dias) is a happy, hockey-loving 11-year-old Midwestern girl, but her world turns upside-down when she and her parents move to San Francisco. Riley's emotions -- led by Joy (Amy Poehler) -- try to guide her through this difficult, life-changing event. However, the stress of the move br…","http://www.imdb.com/title/tt2096673/","https://upload.wikimedia.org/wikipedia/en/0/0a/Inside_Out_%282015_film%29_poster.jpg","https://www.youtube.com/watch?v=_MC3XuMvsDI")
@@ -13,5 +17,8 @@ mission_impossible_five = media.Movie("Mission Impossible 5", "With the IMF now 
 
 spectre = media.Movie("Spectre", "A cryptic message from his past sends James Bond (Daniel Craig) on a quest to uncover a sinister organization while M (Ralph Fiennes) battles political forces that want to shut down the British secret service...","http://www.imdb.com/title/tt2379713/","http://ia.media-imdb.com/images/M/MV5BMjIwNTA1MDA2Ml5BMl5BanBnXkFtZTgwNzIzMTA5NDE@._V1_SX640_SY720_.jpg","https://www.youtube.com/watch?v=LTDaET-JweU")
 
+# Creating the list
 movies = [man_on_fire, inside_out, jurassic_world, star_wars, mission_impossible_five, spectre]
+
+# Passing the list to the open_movies_page function with parameter 'movies'
 fresh_tomatoes.open_movies_page(movies)

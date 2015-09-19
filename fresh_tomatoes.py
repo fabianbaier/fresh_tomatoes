@@ -1,3 +1,5 @@
+# Importing the essentials to create the fresh_tomatoes.py
+
 import webbrowser
 import os
 import re
